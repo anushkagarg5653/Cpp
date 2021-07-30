@@ -11,10 +11,17 @@ int main(){
     //     ptr++;
     // }
     
+    // int *ptr = arr;
+    // for(int i=0; i<3; i++){
+    //     cout<<*(arr+i)<<endl;
+    //     // arr++ // illegal
+    // }
+    // OR
+
     int *ptr = arr;
-    for(int i=0; i<3; i++){
-        cout<<*(arr+i)<<endl;
-        // arr++ // illegal
+    for(int i=0; i<3;i ++){
+        cout<<*ptr<<endl;
+        ptr++;
     }
 
     return 0;

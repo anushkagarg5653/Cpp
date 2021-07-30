@@ -10,7 +10,11 @@ void swap(int *a,int *b){
 int main(){
     int a = 2;
     int b = 8;
-    swap(&a, &b);
+    // swap(&a, &b);
+
+    int *aptr = &a;
+    int *bptr = &b;
+    swap(aptr, bptr);
     cout<<a<<" "<<b;
     return 0;
 }
