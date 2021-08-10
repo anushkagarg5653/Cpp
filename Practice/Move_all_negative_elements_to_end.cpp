@@ -9,16 +9,18 @@ int main(){
         cin>>arr[i];
     }
 
-    for(int i=0; i<n;i++){
-        int temp = 0;
-        if(arr[i]<0){
-            temp = arr[i];
-            arr[i] = arr[n-i-1];
-            arr[n-i-1] = temp;
+    for(int i=0; i<n; i++){
+        if(arr[i]>0){
+            cout<<arr[i]<<" ";
         }
     }
-    for(int i=0; i<n; i++){
-        cout<<arr[i]<<" ";
+
+    for(int i =0; i<n; i++){
+        if(arr[i]<0){
+            cout<<arr[i]<<" ";
+        }
     }
-    return 0;
+
+	
+	return 0;
 }
