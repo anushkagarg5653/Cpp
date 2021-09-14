@@ -80,11 +80,21 @@ void deleteAtHead(node* &head){
     delete(todelete);
 }
 
+int getLength(node* head){
+    int count =0;
+    node* temp = head;
+    while(temp!=NULL){
+        count++;
+        temp = temp->next;
+    }
+    return count;
+}
+
 int main(){
     node* head = NULL;
     insertAtTail(head, 1);
-    // insertAtTail(head, 2);
-    // insertAtTail(head, 3);
+    insertAtTail(head, 2);
+    insertAtTail(head, 3);
     display(head);
     // insertAtHead(head, 8);
     // display(head);
@@ -93,7 +103,9 @@ int main(){
     // display(head);
     // deleteAtHead(head);
     // display(head);
-    deletion(head, 1);
-    display(head);
+    // deletion(head, 1);
+    // display(head);
+    cout<<getLength(head);
+    
     return 0;
 }
