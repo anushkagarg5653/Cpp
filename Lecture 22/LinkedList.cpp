@@ -11,7 +11,6 @@ class node{
     }
 };
 
-
 void insertAtTail(node* &head, int val){
     node* newnode = new node(val);
     if(head == NULL){
@@ -40,7 +39,6 @@ void display(node* head){
         temp = temp->next;
     }
     cout<<"NULL"<<endl;
-    
 };
 
 bool search(node* head, int key){
@@ -71,7 +69,6 @@ void deletion(node* &head, int val){
     }
     node* todelete = temp->next;
     delete todelete;
-   
 }
 
 void deleteAtHead(node* &head){
@@ -106,6 +103,5 @@ int main(){
     // deletion(head, 1);
     // display(head);
     cout<<getLength(head);
-    
     return 0;
 }
