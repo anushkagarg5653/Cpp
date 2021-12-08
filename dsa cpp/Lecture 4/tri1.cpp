@@ -8,12 +8,12 @@ int main(){
     while(row<=n){
         int col=1;
         while(col<=row){
-            char ch = 'A'+row+col-2;
+            char ch = 'A'+row-1;
             cout<<ch<<" ";
             col++;
         }
-        cout<<endl;
         row++;
+        cout<<endl;
     }
     return 0;
 }

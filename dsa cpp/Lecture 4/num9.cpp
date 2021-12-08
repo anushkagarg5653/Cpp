@@ -7,13 +7,13 @@ int main(){
     int row=1;
     while(row<=n){
         int col=1;
-        while(col<=row){
+        while(col<=n){
             char ch = 'A'+row+col-2;
             cout<<ch<<" ";
             col++;
         }
-        cout<<endl;
         row++;
+        cout<<endl;
     }
     return 0;
 }
