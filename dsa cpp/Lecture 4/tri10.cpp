@@ -5,17 +5,18 @@ int main(){
     int n;
     cin>>n;
     int row=1;
-    char ch  = 'A';
     while(row<=n){
+
         int col = 1;
-        int count=0;
-        while(col<=row){
-            cout<<ch;
-            count++;
-            ch++;
+        while(col<row){
+            cout<<" ";
             col++;
-            
         }
+       while(col<=n){
+           cout<<row;
+           col++;
+       }
+
         cout<<endl;
         row++;
     }
