@@ -21,9 +21,6 @@ void insertion(int arr[], int n){
 
 int main(){
     int arr[5] = {3,2,6,4,8};
-    // insertion(arr, 5);
-    for(int i=0; i<5; i++){
-        cout<<insertion(arr, 5) <<" ";
-    }
+  
     return 0;
 }
