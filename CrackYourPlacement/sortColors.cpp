@@ -9,16 +9,16 @@ public:
            switch(nums[mid]){
                    
            
-               case 0:
+            case 0:
                 swap(nums[mid++], nums[low++]);
                 break;
             
             // for 1
-                case 1:
+            case 1:
                 mid++;
                 break;
             // for 2
-                case 2:
+            case 2:
                 swap(nums[mid], nums[high--]);
                 break;
             
