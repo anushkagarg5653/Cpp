@@ -1,0 +1,1 @@
+{"name":"Local: shuffledSubStr","url":"c:\\Users\\ANUSHKA GARG\\Desktop\\Cpp\\450 DSA cracker\\Strings\\shuffledSubStr.cpp","tests":[{"id":1658119581629,"input":"XY\n1\n1X2YZ","output":"suna"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ANUSHKA GARG\\Desktop\\Cpp\\450 DSA cracker\\Strings\\shuffledSubStr.cpp","group":"local","local":true}
