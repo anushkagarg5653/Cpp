@@ -6,7 +6,7 @@ void solve(string str, vector<string> &ans,int index,string output  ){
         return;
     }
     
-    //excldue
+    //exclude
     solve(str, ans, index+1, output);
     
     //include
