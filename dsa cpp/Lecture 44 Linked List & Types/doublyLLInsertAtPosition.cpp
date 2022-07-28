@@ -14,20 +14,33 @@ class Node{
     }
 };
 
-void insertAtTail(Node* &tail, int data){
+void insertAtTail(Node* &tail, Node* &head , int data){
+    if(tail == NULL){
+        Node* temp = new Node(data);
+        head = temp;
+        tail = temp;
+    }
+    else{
     Node* temp = new Node(data);
-
     tail -> next = temp;
     temp -> prev = tail ;
     tail = temp;
+    }
 }
 
-void insertAtHead(Node* &head, int data){
+void insertAtHead(Node* &tail,Node* &head, int data){
+    // if not staring from node if both head and tail null then this check 
+    if(head == NULL){
+        Node* temp = new Node(data);
+        head = temp;
+        tail = temp;
+    }
+    else{
     Node* temp = new Node(data);
-
     temp -> next = head;
     head -> prev = temp;
     head = temp; 
+    }
 }
 
 void insertAtPosition(Node* &head, Node* &tail, int position, int data){
@@ -37,7 +50,7 @@ void insertAtPosition(Node* &head, Node* &tail, int position, int data){
     int count = 1;
 
     if(position == 1){
-        insertAtHead(head, data);
+        insertAtHead(tail,head, data);
         return;
     }
 
@@ -48,7 +61,7 @@ void insertAtPosition(Node* &head, Node* &tail, int position, int data){
     }
 
     if(temp -> next == NULL){
-        insertAtTail(tail, data);
+        insertAtTail(tail,head, data);
         return;
     }
     Node* newNode = new Node(data);
@@ -72,12 +85,12 @@ void print(Node* &head){
 }
 
 int main(){
-    Node* newNode = new Node(10);
-    Node* head = newNode;
-    Node* tail = newNode;
+    // Node* newNode = new Node(10);
+    Node* head = NULL;
+    Node* tail = NULL;
     print(head);
-    insertAtTail(tail, 30);
-    insertAtHead(head, 20);
+    insertAtTail(tail,head, 30);
+    insertAtHead(tail,head, 20);
     print(head);
     insertAtPosition(head, tail, 2, 101);
     print(head);
