@@ -1,7 +1,7 @@
 bool isCircular(Node *head)
 {
     if(head == NULL)
-        return NULL;
+        return true;
     
     Node* temp = head -> next;
 
