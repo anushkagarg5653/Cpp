@@ -4,7 +4,7 @@ using namespace std;
 // 1 -> even
 // 2 -> odd
 bool isEven(int a){
-    if(a&1)
+    if(a&1 == 0)
         return 0;
     return 1;
 };
