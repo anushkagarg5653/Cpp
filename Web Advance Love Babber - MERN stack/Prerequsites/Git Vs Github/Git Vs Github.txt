@@ -1,0 +1,4 @@
+GIT - is a version control tool, which tracks your chnges also provide extra features
+ 
+GITHUB - a hosting service, eg youtube is hosting service
+
