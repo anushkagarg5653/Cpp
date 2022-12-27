@@ -1,0 +1,7 @@
+Git Repository commands
+
+pwd - to check your current directory
+ls - list all the files inside a folder
+git init  - convert a normal folder into git repo folder
+git diff - to see the changes you have done in a reppo
+git status - to check the status
