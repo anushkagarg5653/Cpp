@@ -1,0 +1,15 @@
+git log - tells you the latest commit, message visible content not there
+
+git log --3 - gives you 3 latest commit
+
+git log --stat - shows files names that are changed
+
+git log -p - tells files which are modified and the content that is modified
+
+git log --oneline = tells the SHA id of commit and commit messages
+
+git show SHA_ID = shows the particular changes that are done
+
+
+
+
