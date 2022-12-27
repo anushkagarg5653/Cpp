@@ -1,0 +1,8 @@
+git add file_name - to add files in repo
+
+git commit - m "msg" - to commit the files
+
+git push - 
+
+git add. = (not recommended) adds all the changes in the file
+
