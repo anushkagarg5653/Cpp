@@ -1,0 +1,18 @@
+git branch  - to check which branch you are in
+
+git branch branch_name = to create new branch
+
+git checkout branch_name - to shift from one branch to another
+
+git checkout -b branch_name = to create a new branch and switch to it
+
+git commit -am "branch_name" = to add and commit together
+
+NOTEE 
+
+got to master branch or branch you want to merge to and then merge
+
+git merge branch_name = will merge the branch to main branch
+
+git branch -d branch_name = to delete a branch
+

@@ -1,0 +1,33 @@
+git tag -a tag_name.o SHA_id -m "My Beta Release" = to tag a commit so that it can go for testing 
+
+git tag -d tag_name = to delete a tag 
+
+-----------------------------------------------------------------------
+
+
+STASHING
+
+-----------------------------------------------------------------------
+
+
+
+When your repository is not updated as main repo and you are creating a pull request it will show an error
+
+to resolve it you so stashing
+
+git stash = it will store your changes somewhere 
+
+git stash list = to see the stash list
+
+git pull = to pull all the changes from main branch to yours
+
+git stash apply = to merge your changes in the file
+
+-------------------------------------------------------------------------
+
+git push -u origin master = to push the code in main branch
+
+
+
+
+
