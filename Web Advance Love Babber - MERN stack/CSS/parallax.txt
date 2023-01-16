@@ -1,0 +1,8 @@
+To have parallax effect we need to add `perspective: 10px -- any number`
+
+whichever container we want to play the 3d game we need to explicitly tell it by `transform-style: preserver-3d`
+otherwise it will behave like 2d 
+
+default indexof flex is row | behave horizonal x axis wise
+
+
